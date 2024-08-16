@@ -38,7 +38,7 @@ function EventsPage() {
     return(
         <div>
             <h1>{event.title}</h1>
-            <p>{event.content}</p>
+            <p className="desc">{event.content}</p>
             <img alt="event-img" className="img" src={event.image}></img>
             
             { user

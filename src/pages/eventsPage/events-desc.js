@@ -1,5 +1,6 @@
 import tracye_lawyer from "./eventImages/tracye-lawyer.png";
 import andreas_stamatakis from "./eventImages/andreas-stamatakis.png"
+import amy_wang from "./eventImages/amy-wang.png"
 
 const events = [
     {        
@@ -19,7 +20,8 @@ const events = [
     {
         name: 'amy-wang-5-2',
         title: 'Choosing Your Career Webinar - Amy Wang',
-        content: ["Don't know what career to pursue after college? Need help picking out the right career? Want to know if your dream career is really the right fit for you? Join us for an informative 30-minute webinar on the Reality of Choosing Your career, hosted by Learn It in partnership with Caltech and MIT graduate, Amy Wang. Tune in to learn about the key to pursuing your passions, how to choose your major, career advice, and more! To"]
+        content: ["Don't know what career to pursue after college? Need help picking out the right career? Want to know if your dream career is really the right fit for you? Join us for an informative 30-minute webinar on the Reality of Choosing Your career, hosted by Learn It in partnership with Caltech and MIT graduate, Amy Wang. Tune in to learn about the key to pursuing your passions, how to choose your major, career advice, and more! To"],
+        image: amy_wang,
     }
 ]
 

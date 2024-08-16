@@ -12,6 +12,12 @@
     text-shadow: 2px 2px 2px black;
 }
 
+.desc {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .img {
     height: 500px;
     display: flex;
