@@ -1,0 +1,35 @@
+.homeContainer {
+    height: 1080px;
+    padding-top: 10px;
+    background-image: url("homePicture.jpg");
+    background-size:cover;
+}
+
+.homeContainer h1 {
+    text-align: left;
+    margin-left: 5%;
+    font-size:60px;
+    width: 50%;
+    text-wrap:balance;
+
+    background: linear-gradient(to right, white, #91ecef); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+.img {
+    margin-left: 50px;
+}
+
+@media (max-width: 1000px) {
+    .homeContainer h1 {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    
+    .homeContainer {
+        background-image: url("homePicture.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;    
+    }
+}
