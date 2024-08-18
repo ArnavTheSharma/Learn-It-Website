@@ -15,6 +15,12 @@
   float: right;
   margin-right: 1.5%;
   transform: translateY(-10%);
+  height: 50px;
+  transition: height 0.3s ease-in-out;
+}
+
+.log-button:hover {
+  height: 100px;
 }
 
 nav {
