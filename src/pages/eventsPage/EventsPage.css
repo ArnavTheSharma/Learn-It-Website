@@ -1,9 +1,11 @@
-.EventsListContainer {
+.EventsListPageContainer {
     background-image: linear-gradient(#8ad8db, #ffffff);
     padding-top: 10px;
     padding-bottom: 100px;
     height: fit-content;
     text-align: center;
+    margin-top: -7%;
+    padding-top: 7%;
 }
 
 .EventsListContainer h1 {

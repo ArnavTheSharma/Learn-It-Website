@@ -16,7 +16,7 @@ function NavBar() {
             <li><Link to="/events">Events</Link></li>
             <li><Link to="/join-us">Join Us</Link></li>
             <li><Link to="/our-team">Our Team</Link></li>
-            <li><Link to="/contact-us">Contact</Link></li>
+            <li><Link to="/contact-us">Contact Us</Link></li>
 
             <div className="log-button">
                 {user
@@ -37,7 +37,7 @@ function NavBar() {
         </nav>
 
 
-        <div id="dropdown-container" className="dropdown-container">
+        <div id="dropdown-container" hidden={true} className="dropdown-container">
             <Link className="dropdown-option" to="/" onClick={dropdownReveal}>Home</Link>
             <Link className="dropdown-option" to="/events" onClick={dropdownReveal}>Events</Link>
             <Link className="dropdown-option" to="/join-us" onClick={dropdownReveal}>Join Us</Link>

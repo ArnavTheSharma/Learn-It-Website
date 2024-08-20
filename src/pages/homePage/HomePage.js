@@ -1,17 +1,30 @@
 import "./HomePage.css";
-import homePicture from "./homePicture.jpg";
 
 function HomePage() {
     return (
-        // About Learn It, certifications, Mission
-        <>
-            <div className="homeContainer">
-                <h1>College and Career Advice Presentations With Professionals</h1>
-            </div>
-        </>
+       <>
+        {/* Landing page */}
+        <div className="homeContainer">
+            <h1>Your Path to College and Career Success Starts <span>Here</span></h1>
+        </div>
 
-        //Join Us and Contact Us Page Redirects 
-        //Upcoming Events Section (Preview) 
+        {/* About Learn It, certifications, Mission */}
+        <section>
+
+        </section>
+        {/* About Learn It, certifications, Mission */}
+        <section>
+
+        </section>
+        {/* Join Us and Contact Us Page Redirects  */}
+        <section>
+
+        </section>
+        {/* Upcoming Events Section (Preview)  */}
+        <section>
+
+        </section>
+        </>
 
     );
 }

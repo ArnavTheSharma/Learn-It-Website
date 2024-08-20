@@ -1,6 +1,6 @@
 function ContactUs() {
     return(
-       <div>
+       <div className="contactUsPageContainer">
             <h1>Get In Touch</h1>
        </div> 
     );

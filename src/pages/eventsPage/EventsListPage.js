@@ -4,7 +4,7 @@ import EventsList from '../../components/EventsList';
 function EventsListPage() {
 
     return (
-        <div className="EventsListContainer">
+        <div className="EventsListPageContainer">
             <h1>Our Past Events</h1>
             <EventsList events={events} />
         </div>

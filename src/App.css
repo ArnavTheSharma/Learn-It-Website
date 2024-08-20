@@ -11,16 +11,16 @@ button {
   padding: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  background-color: #3DA4CA;
+  background-color: #DD6C73;
   color: white;
+  font-weight: bold;
   border-radius: 8px;
-  cursor: pointer;
+  border-color: #DD6C73;
 }
 
 
 #page-body {
   margin: auto;
-  padding-top: 70px;
   width: 100vw;
 }
 

@@ -1,8 +1,11 @@
 .homeContainer {
-    height: 1080px;
+    height: 800px;
     padding-top: 10px;
-    background-image: url("homePicture.jpg");
+    background-image: url("homePicture.png");
     background-size:cover;
+    background-color: #7D84A1;
+    margin-top: -7%;
+    padding-top: 7%;
 }
 
 .homeContainer h1 {
@@ -12,14 +15,26 @@
     width: 50%;
     text-wrap:balance;
 
-    background: linear-gradient(to right, white, #91ecef); 
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text; 
+    -webkit-text-fill-color: #7D84A1; 
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;    
 }
 
-.img {
-    margin-left: 50px;
+.homeContainer span {
+    -webkit-text-fill-color: transparent; 
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,#C8E5E6 10%,#7D84A1 29%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    animation: textclip 2s linear infinite;
 }
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 
 @media (max-width: 1000px) {
     .homeContainer h1 {
@@ -28,8 +43,11 @@
     }
     
     .homeContainer {
-        background-image: url("homePicture.jpg");
         background-size:contain;
         background-repeat: no-repeat;    
+    }
+
+    .homeContainer span {
+        font-size: 50px;
     }
 }
