@@ -11,11 +11,11 @@ button {
   padding: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  background-color: #DD6C73;
+  background-color: #2F3D6C;
   color: white;
   font-weight: bold;
   border-radius: 8px;
-  border-color: #DD6C73;
+  border-color: #2F3D6C;
 }
 
 
@@ -83,4 +83,12 @@ input, textarea {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.divider {
+  border-top: thick double #32a1ce;
+  border-bottom: thick double #32a1ce;
+  padding: 10px;
+  width: fit-content;
+  margin-left: 10%;
 }

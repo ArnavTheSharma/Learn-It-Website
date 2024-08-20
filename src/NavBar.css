@@ -18,8 +18,9 @@
 }
 
 nav {
-    border-bottom: solid 3px #DD6C73;
+    border-bottom: solid 3px #2B3664;
     text-align: center;
+    mix-blend-mode: normal;
     backdrop-filter: blur(10px);
     position:sticky;
     height: 90px;
@@ -36,7 +37,7 @@ nav {
 
   nav a {
     text-decoration:none;
-    color: #DD6C73;
+    color: #2B3664;
     font-weight:700;
 
     padding: 24px 32px;
@@ -64,7 +65,7 @@ nav {
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #DD6C73;
+    background-color: #2B3664;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -90,7 +91,7 @@ nav {
     width: 80%;
     margin-left: 10%;
     margin-top: 15%;
-    background-color: #DD6C73;
+    background-color: #2B3664;
     border-radius: 15px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
 
@@ -122,7 +123,7 @@ nav {
     border-radius: 15px;
     width: 80%;
     margin-top: 15%;
-    background-color: #DD6C73;
+    background-color: #2B3664;
     border-radius: 15px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
   }
