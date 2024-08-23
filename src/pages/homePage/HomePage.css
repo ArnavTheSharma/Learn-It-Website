@@ -16,8 +16,8 @@
     font-size:60px;
     width: 50%;
     text-wrap:balance;
-
-    -webkit-text-fill-color: #766F85; 
+    margin-top: 5%;
+    -webkit-text-fill-color: #8C9AB1; 
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: white;    
 }
@@ -58,10 +58,5 @@
         background-repeat: no-repeat;
 
     }
-
-    .joinUsButton {
-        width: 30%;
-        margin-left: 5%;
-    }    
 
 }
