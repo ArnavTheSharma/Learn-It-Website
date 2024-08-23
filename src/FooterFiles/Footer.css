@@ -1,0 +1,11 @@
+#Footer{
+    background-color: black;
+    color: white;
+}
+#copyright{
+    font-size: small;
+}
+#socialLinks{
+    vertical-align: middle;
+    align-items: center;
+}

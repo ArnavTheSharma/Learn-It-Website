@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './FooterFiles/Footer'
 import NavBar from './NavBar';
 import ContactUs from './pages/contactPage/ContactUs';
 import EventsPage from './pages/eventsPage/EventsPage';
@@ -28,6 +29,7 @@ function App() {
             <Route path="*" element={<NotFoundPage />} /> 
           </Routes>
       </div>
+      <Footer/>
     </BrowserRouter>
   );
 }
