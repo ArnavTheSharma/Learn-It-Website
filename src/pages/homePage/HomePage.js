@@ -1,5 +1,6 @@
 import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
+import Section3 from "./sections/section3/Section3";
 
 
 function HomePage() {
@@ -18,9 +19,9 @@ function HomePage() {
         <section>
 
         </section>
-        {/* About Learn It, certifications, Mission */}
-        <section>
-
+        {/*  Section with 23 partners, volunteer count, webinar count */}
+        <section className="">
+            <Section3 />
         </section>
         {/* Join Us and Contact Us Page Redirects  */}
         <section>
