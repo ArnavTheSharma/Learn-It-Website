@@ -69,7 +69,6 @@ input, textarea {
 }
 
 #upvotes-section button, p {
-  display: inline-block;
   margin-right: 16px;
 }
 

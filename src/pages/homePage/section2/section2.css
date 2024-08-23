@@ -1,0 +1,56 @@
+.section2Container {
+    padding: 5%;
+    display: grid;
+    grid-template-areas:
+        '. middle middle middle right right'
+        'left middle middle middle right right'
+        '. middle middle middle right right';
+    gap: 30px;
+}
+
+.text { 
+    grid-area: left;
+    text-wrap: balance;
+    font-size:1.5vw;
+    color: #5654A3;
+    font-weight: bold;
+}
+
+.middle {
+    grid-area: middle;
+    height: 100%;
+    width: 300px;
+    position: relative;
+}
+
+.right {
+    grid-area:right;
+    height: 100%;
+    width: 300px;
+}
+
+.Certification1 {
+    background-color: #F7F2F7;
+}
+
+.certificateText {
+    overflow-wrap: break-word;
+    text-align: center;
+    padding: 3%;
+    margin-top: -80%;
+    margin-left: 5%;
+    font-weight:bold;
+    color: #5654A3;
+    text-shadow: 3px 3px #C8E5E6;
+    
+}
+
+.section2Container img {
+    opacity: 1;
+    transition: opacity 1s ease;
+    backface-visibility: hidden;  
+}
+
+.section2Container img:hover {
+    opacity: 0.2;
+}

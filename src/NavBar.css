@@ -20,9 +20,7 @@
 nav {
     border-bottom: solid 3px #DD6C73;
     text-align: center;
-    mix-blend-mode: normal;
     backdrop-filter: blur(10px);
-    position:sticky;
     height: 90px;
   }
   
