@@ -39,7 +39,7 @@ function EventsPage() {
         <div>
             <h1>{event.title}</h1>
             <p className="desc">{event.content}</p>
-            <img alt="event-img" className="img" src={event.image}></img>
+            <img alt="event-img" className="eventImg" src={event.image}></img>
             
             { user
                 ? <AddCommentForm
