@@ -11,17 +11,20 @@ button {
   padding: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  background-color: #2F3D6C;
+  background-color: #DD6C73;
   color: white;
   font-weight: bold;
   border-radius: 8px;
-  border-color: #2F3D6C;
+  border-color: #DD6C73;
 }
 
 
 #page-body {
-  margin: auto;
   width: 100vw;
+  background-color: #F7F2F7;
+  height: calc(100% + 100px);
+  margin-top: -10%;
+  padding-top: 10%;
 }
 
 .event-list-item {

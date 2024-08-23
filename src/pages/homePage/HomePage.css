@@ -3,7 +3,7 @@
     padding-top: 10px;
     background-image: url("homePicture.png");
     background-size:cover;
-    background-color: #766F85;
+    background-color: #8C9AB1;
     margin-top: -7%;
     padding-top: 7%;
     z-index:-1;
@@ -16,8 +16,8 @@
     font-size:60px;
     width: 50%;
     text-wrap:balance;
-
-    -webkit-text-fill-color: #766F85; 
+    margin-top: 5%;
+    -webkit-text-fill-color: #8C9AB1; 
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: white;    
 }
@@ -35,6 +35,8 @@
     width: 15%;
     margin-left: 5%;
 }
+
+
 
 @keyframes textclip {
   to {
