@@ -1,4 +1,55 @@
 .teamPageContainer {
     margin-top: -7%;
     padding-top: 7%;
+    text-align: center;
+}
+.teamContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.teamMembers {
+    align-items: center;
+    vertical-align: middle;
+}
+hr {
+    width: 50%;
+}
+
+#aboutTeam {
+    width: 75%;
+    font-size: larger;
+}
+
+#socialMedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+#socialText{
+    font-size: larger;
+    width: 30%;
+}
+#socialMediaPic{
+    vertical-align: middle;
+    align-items: center;
+}
+#comm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+#commText{
+    font-size: larger;
+    width: 30%;
+}
+#commPic{
+    vertical-align: middle;
+    align-items: center;
 }
