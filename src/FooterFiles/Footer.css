@@ -6,6 +6,15 @@
     font-size: small;
 }
 #socialLinks{
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 10%;
+    padding-top: 5%;
+}
+hr{
+    width: 50%;
 }
