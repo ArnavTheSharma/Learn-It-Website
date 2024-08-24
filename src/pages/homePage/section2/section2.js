@@ -14,6 +14,7 @@ function Section2() {
         <>
         <div className="section2Container">
             {/* About Learn It + Mission + Certification*/}
+            <h1 className="title">Our Story</h1>
             <p className="text">Learn It began as a small passion project from three high school sophomores who simply wanted to bridge the accessibility gap for high-quality STEM education for communities worldwide. Now, the organization has grown to be a 500-member-plus program with various international platforms.</p>
 
             <div className="middle">
