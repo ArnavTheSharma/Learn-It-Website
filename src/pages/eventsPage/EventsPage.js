@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { CiLink } from "react-icons/ci";
 
 import "./EventsPage.css";
-import events from "./events-desc";
+import pastEvents from "./pastEventsDesc";
 import NotFoundPage from "../NotFoundPage";
 import CommentsList from '../../components/CommentsList';
 import AddCommentForm from "../../components/AddCommentForm";
@@ -30,7 +31,7 @@ function EventsPage() {
     }, [isLoading, user]);
 
 
-    const event = events.find(event => event.name === eventId);
+    const event = pastEvents.find(event => event.name === eventId);
     if (!event) {
         return <NotFoundPage />;
     }
@@ -39,13 +40,26 @@ function EventsPage() {
         <div>
             <h1>{event.title}</h1>
             <p className="desc">{event.content}</p>
+            {event.presentation
+                ? <a href={`${event.presentation}`} target='_blank'><p style={{"text-align": "center"}}>Presentation Link<CiLink /></p></a>
+                : <></>
+            }
+            {event.recording
+                ? <a href={`${event.recording}`} target='_blank'><p style={{"text-align": "center"}}>Recording Link<CiLink /></p></a>
+                : <></>
+            }
+            {event.resources
+                ? <a href={`${event.resources}`} target='_blank'><p style={{"text-align": "center"}}>Provided Resources<CiLink /></p></a>
+                : <></>
+            }
             <img alt="event-img" className="eventImg" src={event.image}></img>
+            
             
             { user
                 ? <AddCommentForm
                     eventName={eventId}
                     onEventUpdated={updatedEvent => setEventInfo(updatedEvent)} />
-                : <button onClick={()=> {navigate('/login')}}>Log in to Comment</button>}
+                : <button style={{ "margin-left": "100px"}} onClick={()=> {navigate('/login')}}>Log in to Comment</button>}
             <CommentsList comments={eventInfo.comments} />
         </div>
     );

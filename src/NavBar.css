@@ -1,5 +1,5 @@
 .logo {
-  height:90px;
+  height:85px;
   float: left;
   overflow: hidden;
   margin-left: 1%;
@@ -63,7 +63,7 @@ nav {
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #2B3664;
+    background-color: #DD6C73;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -89,7 +89,7 @@ nav {
     width: 80%;
     margin-left: 10%;
     margin-top: 15%;
-    background-color: #2B3664;
+    background-color: #DD6C73;
     border-radius: 15px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
 
@@ -121,7 +121,7 @@ nav {
     border-radius: 15px;
     width: 80%;
     margin-top: 15%;
-    background-color: #2B3664;
+    background-color: #DD6C73;
     border-radius: 15px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
   }

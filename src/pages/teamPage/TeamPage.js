@@ -1,4 +1,5 @@
 import "./TeamPage.css"
+import placeholderPicture from "./placeholderPicture.png"
 function TeamPage() {
     return(
         <div className="teamPageContainer">
@@ -7,17 +8,17 @@ function TeamPage() {
             <h2>Founders</h2>
             <div className="teamContainer">
                 <div className="teamMembers">
-                    <img src="" alt="image"></img>
+                    <img src={placeholderPicture} height="100px" alt="image"></img>
                     <h3>Piyusha Majgaonkar</h3>
                     <h4><a href="mailto:piyusha.majgaonkar@gmail.com">piyusha.majgaonkar@gmail.com</a></h4>
                 </div>
                 <div className="teamMembers">
-                    <img src="" alt="image"></img>
+                    <img src={placeholderPicture} height="100px" alt="image"></img>
                     <h3>Aryan Das</h3>
                     <h4><a href="mailto:itsaryandas15@gmail.com">itsaryandas15@gmail.com</a></h4>
                 </div>
                 <div className="teamMembers">
-                    <img src="" alt="image"></img>
+                    <img src={placeholderPicture} height="100px" alt="image"></img>
                     <h3>Sunaina Pal</h3>
                     <h4><a href="mailto:sunainapal2006@gmail.com">sunainapal2006@gmail.com</a></h4>
                 </div>
@@ -27,7 +28,7 @@ function TeamPage() {
             <h2>Social Media Manager</h2>
             <div id="socialMedia">
                 <div id="socialMediaPic">
-                    <img src="" alt="image"></img>
+                    <img src={placeholderPicture} height="100px" alt="image"></img>
                     <h3>Himal Bokka</h3>
                     <h4><a href="mailto:Himalkumar2020@gmail.com">Himalkumar2020@gmail.com</a></h4>
                 </div>
@@ -37,7 +38,7 @@ function TeamPage() {
             <h2>Communications Coordinator</h2>
             <div id="comm">
                 <div id="commPic">
-                    <img src="" alt="image"></img>
+                    <img src={placeholderPicture} height="100px" alt="image"></img>
                     <h3>Merav Sriram</h3>
                     <h4><a href="mailto:meravsriram@gmail.com">meravsriram@gmail.com</a></h4>
                 </div>

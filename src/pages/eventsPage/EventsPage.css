@@ -2,7 +2,6 @@
     background-image: linear-gradient(#8ad8db, #ffffff);
     padding-top: 10px;
     padding-bottom: 100px;
-    height: fit-content;
     text-align: center;
     margin-top: -7%;
     padding-top: 7%;
@@ -16,13 +15,89 @@
 
 .desc {
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 60%; 
+    text-wrap:balance;
+    margin: auto;
+    margin-bottom: 1%;
 }
 
 .eventImg {
-    height: 500px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.commentSection {
+    margin-left: 50px;
+}
+
+.upcomingContainer{
+    overflow: hidden;
+}
+
+
+#add-comment-form button {
+    width: 320px;
+  }
+  
+  
+.pastEventsContainer {
+    display: grid;
+    grid-template-areas:
+        'a a a a a a'
+        'a a a a a a'
+        'a a a a a a';
+    gap: 10px;
+} 
+
+.event-list-item h3 {
+    grid-area: a;
+    color: #643d76;
+    text-wrap:balance;
+}
+
+
+.event-list-item img {
+    height: 20vh;
+}
+
+
+#add-comment-form {
+    border-bottom: 2px solid black;
+    padding: 16px;
+}
+
+#add-comment-form h3 {
+    margin-bottom: 16px;
+}
+
+.comment {
+    border-bottom: 2px solid black;
+    padding: 16px;
+}
+
+.comment h4 {
+    color: black;
+}
+
+.hackathonContainer {
+    background-image: radial-gradient(#B63E68, #b63e6800, #b63e6800);
+    height: 70%;
+    margin: auto;
+}
+
+.hackathonImage {
+    margin: auto;
+    max-height: 20vh;
+    overflow-y: scroll;
+    scrollbar-color: #314786 #b63e6878;
+    width: 40%;
+    scrollbar-width:thin;  
+}
+
+.EventsListPageContainer a:hover {
+    color: #B63E68;
+    text-decoration: underline;
 }

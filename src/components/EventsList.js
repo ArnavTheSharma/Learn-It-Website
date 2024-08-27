@@ -6,7 +6,8 @@ const EventsList = ( {events} ) => {
             {events.map(event => (
             <Link key={event.name}  className="event-list-item" to={`/events/${event.name}`}>
                 <h3>{event.title}</h3>
-                <p>{event.content[0].substring(0, 150)} ...</p> 
+                <img src={event.image}></img>
+                <p>{event.content[0].substring(0, 100)} ...</p> 
             </Link>
         ))}
         </>
