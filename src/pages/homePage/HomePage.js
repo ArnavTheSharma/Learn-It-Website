@@ -23,7 +23,7 @@ function HomePage() {
         {/* Join Us and Contact Us Page Redirects  */}
         {/* Upcoming Events Section (Preview)  */}
         {/* Partners Section  */}
-        <section id="partners" >
+        <section id="partners" className="my-7 pt-10" >
                 Partners Section
         </section>
         </>
