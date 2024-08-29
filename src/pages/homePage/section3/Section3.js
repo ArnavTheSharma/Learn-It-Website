@@ -14,7 +14,7 @@ const Section3 = () => {
     }
     return ( 
         <div className="section3 flex justify-center items-center py-10">
-            <div className=" flex justify-center items-center border-[.3em] border-white">
+            <div className=" flex justify-center items-center border-[.3em]  border-white">
                 <div className="bg-[#b9c2d2] p-20 flex justify-center items-center" onClick={()=>handlePartnersClick()}>
                         <div className='flex flex-col justify-center items-center'>
                             <FaHandshake className='rotate-90 text-red-300 w-full text-3xl' />
