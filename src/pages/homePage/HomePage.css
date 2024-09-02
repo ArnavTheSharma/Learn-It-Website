@@ -54,9 +54,13 @@
     }
     
     .homeContainer {
-        background-size: 120% 70%;
+        height: 500px;
+        background-size: 120% 100%;
         background-repeat: no-repeat;
+    }
 
+    .joinUsButton {
+        width: 30%;
     }
 
 }

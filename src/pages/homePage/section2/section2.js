@@ -4,12 +4,6 @@ import Certification2 from "./CMHQ.png";
 
 
 function Section2() {
-    function revealText() {
-        document.getElementById("certificateText").hidden=false;
-    }
-    function hideText() {
-        document.getElementById("certificateText").hidden=true;
-    }
     return(
         <>
         <div className="section2Container">
@@ -18,7 +12,7 @@ function Section2() {
             <p className="text">Learn It began as a small passion project from three high school sophomores who simply wanted to bridge the accessibility gap for high-quality STEM education for communities worldwide. Now, the organization has grown to be a 500-member-plus program with various international platforms.</p>
 
             <div className="middle">
-                <img className="Certification1" src={Certification1}></img>
+                <img style={{"background-color": "#F7F2F7"}} src={Certification1}></img>
                 <p className="certificateText" id="certificateText">Learn It is a proud 501(c)(3) certified non-profit organization working to bridge the STEM education accessibility gap by providing free STEM education and career-exploration resources for all.</p>
             </div>
 

@@ -1,11 +1,12 @@
 .section2Container {
     padding: 5%;
     display: grid;
+    grid-template-columns: 50% 25% 25%;
     grid-template-areas:
-        'title middle middle middle right right'
-        'left middle middle middle right right'
-        '. middle middle middle right right';
-    gap: 30px;
+        'title middle right'
+        'text middle right'
+        'text middle right';
+        gap: 30px;
 }
 
 .title {
@@ -15,7 +16,7 @@
 }
 
 .text { 
-    grid-area: left;
+    grid-area: text;
     text-wrap: balance;
     font-size:1.5vw;
     color: #5654A3;
@@ -25,39 +26,51 @@
 
 .middle {
     grid-area: middle;
-    height: 100%;
-    width: 300px;
+    width: 20vw;
     position: relative;
 }
 
 .right {
     grid-area:right;
-    height: 100%;
-    width: 300px;
+    width: 20vw;
+    position: relative;
 }
 
-.Certification1 {
-    background-color: #F7F2F7;
-}
 
 .certificateText {
-    overflow-wrap: break-word;
-    text-align: center;
-    padding: 3%;
-    margin-top: -80%;
-    margin-left: 5%;
     font-weight:bold;
     color: #5654A3;
-    text-shadow: 3px 3px #C8E5E6;
-    
+    text-shadow: 2px 2px #C8E5E6;
+    text-align: center;
+    text-wrap: balance;
+    font-size:1.5vw;
+    position: absolute;
+    top: 0;
 }
 
 .section2Container img {
     opacity: 1;
-    transition: opacity 1s ease;
-    backface-visibility: hidden;  
+    transition: opacity 1.5s ease;
+    backface-visibility: hidden; 
+    width: 20vw;
+    position: absolute;
+    z-index: 1;
 }
 
 .section2Container img:hover {
     opacity: 0.2;
+}
+
+@media (max-width: 1000px) {
+    .section2Container {
+        grid-template-columns: 40% 30% 30%;
+        grid-template-areas:
+            'title middle right'
+            'text . .';
+        gap: 10px;
+    }
+
+    .middle, .right {
+        margin-left: 10%;
+    }
 }

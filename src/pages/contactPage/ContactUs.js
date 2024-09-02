@@ -5,6 +5,7 @@ import { FaTiktok } from 'react-icons/fa6';
 import logo from '../../companyLogos/learn-it-icon-transparent.png'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 import { useState } from 'react';
+
 function ContactUs() {
     const [showFounders,setShowFounder]=useState(false)
     const [showSMM,setShowSMM]=useState(false)
