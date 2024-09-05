@@ -4,9 +4,9 @@ import { MdVolunteerActivism } from 'react-icons/md';
 import { FcConferenceCall } from 'react-icons/fc';
 import { useState } from 'react';
 const Section3 = () => {
-    const [volunteers,setVolunteers]=useState(50)
+    const [volunteers,setVolunteers]=useState(2)
     const [partners,setPartners]=useState(23)
-    const [webinars,setWebinars]=useState(13)
+    const [webinars,setWebinars]=useState(3)
     const handlePartnersClick=()=>{
         const target=document.getElementById('partners')
         target.scrollIntoView({behavior:'smooth'})

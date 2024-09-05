@@ -1,56 +1,40 @@
 .logo {
-  height:85px;
+  height:80px;
   float: left;
   overflow: hidden;
-  margin-left: 1%;
-}
-
-.log-button {
-  float: right;
-  margin-right: 3%;
-  transform: translateY(-10%);
-  height: 50px;
-  transition: box-shadow 0.5s;  
-}
-
-.log-button:hover {
-  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
 }
 
 nav {
-    border-bottom: solid 3px #DD6C73;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    height: 90px;
+    text-align: end;
+    padding: 0% 1%;
+    height: 85px;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #ffffff00, #dd6c74);
+    background-image: linear-gradient(90deg, #ffffff00, #0000005d);
+    border-image-slice: 1;
   }
   
   nav li {
     display: inline-block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transform: translateY(-16%);
-    width: fit-content;
-    text-align: center;
+    text-decoration: 3px underline;
+    text-decoration-color: #ffffff00;
+    transition: text-decoration 1s;
+  }
+
+  nav li:hover {
+    text-decoration-color: #ffffff;
   }
 
   nav a {
     text-decoration:none;
     color: white;
-    font-weight:500;
-    text-shadow: 2px 2px #DD6C73;
-    padding: 24px 32px;
+    font-weight:700;
+    padding: 6px 10px;
+    margin: 2px;
   }
-  
-  nav li:hover {
-    background: #DAB8C5;
-    color: white;
-    transition: all 0.3s ease-out;
-  }
-
 
 
 @media (max-width: 900px) {
-  nav {height: 100px;} 
   nav li {display: none;}
 
   .hamburger-icon {
@@ -94,7 +78,6 @@ nav {
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
 
   }
-
 
   .dropdown-option {
     padding-top: 12px;

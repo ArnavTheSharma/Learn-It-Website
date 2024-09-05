@@ -10,7 +10,6 @@ function HomePage() {
     return (
        <>
         {/* Landing page */}
-        <div className="background"></div>
         <div className="homeContainer">
             <h1>Your Path to College and Career Success Starts <span>Here</span></h1>
             <button className="joinUsButton" onClick={() => {navigate('/join-us');}}>Join US</button>

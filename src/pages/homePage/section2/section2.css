@@ -64,9 +64,10 @@
 @media (max-width: 1000px) {
     .section2Container {
         grid-template-columns: 40% 30% 30%;
+        grid-template-rows: 20% 80%;
         grid-template-areas:
             'title middle right'
-            'text . .';
+            'text middle right';
         gap: 10px;
     }
 

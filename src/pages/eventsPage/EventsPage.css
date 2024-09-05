@@ -10,7 +10,7 @@
 .EventsListContainer h1 {
     text-align: center;
     color: #ffffff;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px rgb(19, 9, 9);
 }
 
 .desc {
@@ -46,21 +46,29 @@
 .pastEventsContainer {
     display: grid;
     grid-template-areas:
-        'a a a a a a'
-        'a a a a a a'
-        'a a a a a a';
+        'a a a a'
+        'a a a a'
+        'a a a a';
     gap: 10px;
 } 
 
+.event-list-item {
+    border:solid #3148863d;
+}
 .event-list-item h3 {
     grid-area: a;
     color: #643d76;
     text-wrap:balance;
+    font-size: calc(1vh+1vw);
 }
 
 
 .event-list-item img {
     height: 20vh;
+}
+
+.event-list-item p {
+    font-size: calc(1vh + 1vw);
 }
 
 
@@ -100,4 +108,18 @@
 .EventsListPageContainer a:hover {
     color: #B63E68;
     text-decoration: underline;
+}
+
+@media (max-width: 1500px) {
+    .pastEventsContainer {
+        grid-template-areas:
+        'a a a';
+    }
+}
+
+@media (max-width: 1000px) {
+    .pastEventsContainer {
+        grid-template-areas:
+        'a a';
+    }
 }

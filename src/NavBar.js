@@ -17,17 +17,16 @@ function NavBar() {
             <li><Link to="/join-us">Join Us</Link></li>
             <li><Link to="/our-team">Our Team</Link></li>
             <li><Link to="/contact-us">Contact Us</Link></li>
-
-            <div className="log-button">
+            <li>
                 {user
-                    ? <button onClick={() => {
+                    ? <a onClick={() => {
                         signOut(getAuth());
-                    }}>Log Out</button>
+                    }}>Log Out</a>
                     
-                    : <button onClick={() => {
+                    : <a onClick={() => {
                         navigate('/login');
-                    }}>Log In</button>}
-            </div>
+                    }}>Log In</a>}
+            </li>
 
             <div id="hamburger-icon" className="hamburger-icon" onClick={dropdownReveal}>
                 <div className="bar1"></div>
