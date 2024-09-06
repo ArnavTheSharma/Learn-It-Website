@@ -16,7 +16,7 @@
 .desc {
     text-align: center;
     width: 60%; 
-    text-wrap:balance;
+    text-wrap:pretty;
     margin: auto;
     margin-bottom: 1%;
 }
@@ -103,6 +103,10 @@
     scrollbar-color: #314786 #b63e6878;
     width: 40%;
     scrollbar-width:thin;  
+}
+
+.EventsListPageContainer a{
+    text-decoration: none;
 }
 
 .EventsListPageContainer a:hover {

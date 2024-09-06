@@ -14,5 +14,9 @@
 
 .box a {
     display: block;
-    padding: 2% 0%;
+    padding: 3% 0%;
+}
+
+.box button {
+    padding: 3%;
 }
