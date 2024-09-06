@@ -23,13 +23,12 @@ nav {
     mix-blend-mode: normal;
     backdrop-filter: blur(10px);
     position:sticky;
-    height: 90px;
+    height: 5em;
   }
   
   nav li {
     display: inline-block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 1em 1em 1em 0em;
     transform: translateY(-16%);
     width: fit-content;
     text-align: center;
@@ -44,9 +43,11 @@ nav {
   }
   
   nav li:hover {
-    background: #DAB8C5;
-    color: white;
+    background: #739775;
+    color: rgb(238, 231, 231);
     transition: all 0.3s ease-out;
+    border-radius: 30%;
+    
   }
 
 
