@@ -62,42 +62,46 @@ const Team = () => {
                     </p>
                 </div>
 
-                {/* Social Media Manager Section */}
-                <div className="flex flex-col items-center">
-                    <div className="flex flex-col  text-center text-xl font-bold text-blue-800 mt-12 mb-6">Social Media Manager</div>
-                    <div className="grid grid-cols-1 items-center justify-center md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                        {teamMembers.filter(member => member.role === 'Social Media Manager').map((member) => (
-                            <div key={member.email} className="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg">
-                                {/* Placeholder for image */}
-                                <div className="w-full h-64 bg-gray-300"></div>
-                                <div className="p-6">
-                                    <h2 className="text-2xl font-semibold text-gray-800 mb-2">{member.name}</h2>
-                                    <p className="text-gray-700 mb-4">{member.description}</p>
-                                    <a href={`mailto:${member.email}`} className="text-blue-600 underline hover:text-blue-800">{member.email}</a>
+                {/* Social Media Manager and Communications Coordinator Section */}
+                <div className="flex flex-col md:flex-row justify-between mt-12 mb-6">
+                    {/* Social Media Manager Section */}
+                    <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+                        <div className="text-center text-xl font-bold text-blue-800 mb-6">Social Media Manager</div>
+                        <div className="grid grid-cols-1 gap-8">
+                            {teamMembers.filter(member => member.role === 'Social Media Manager').map((member) => (
+                                <div key={member.email} className="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg">
+                                    {/* Placeholder for image */}
+                                    <div className="w-full h-64 bg-gray-300"></div>
+                                    <div className="p-6">
+                                        <h2 className="text-2xl font-semibold text-gray-800 mb-2">{member.name}</h2>
+                                        <p className="text-gray-700 mb-4">{member.description}</p>
+                                        <a href={`mailto:${member.email}`} className="text-blue-600 underline hover:text-blue-800">{member.email}</a>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Communications Coordinator Section */}
+                    <div className="w-full md:w-1/2 px-4">
+                        <div className="text-center text-xl font-bold text-blue-800 mb-6">Communications Coordinator</div>
+                        <div className="grid grid-cols-1 gap-8">
+                            {teamMembers.filter(member => member.role === 'Communications Coordinator').map((member) => (
+                                <div key={member.email} className="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg">
+                                    {/* Placeholder for image */}
+                                    <div className="w-full h-64 bg-gray-300"></div>
+                                    <div className="p-6">
+                                        <h2 className="text-2xl font-semibold text-gray-800 mb-2">{member.name}</h2>
+                                        <p className="text-gray-700 mb-4">{member.description}</p>
+                                        <a href={`mailto:${member.email}`} className="text-blue-600 underline hover:text-blue-800">{member.email}</a>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-
-                {/* Communications Coordinator Section */}
-                <div className="text-center text-xl font-bold text-blue-800 mb-6">Communications Coordinator</div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-                    {teamMembers.filter(member => member.role === 'Communications Coordinator').map((member) => (
-                        <div key={member.email} className="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg">
-                            {/* Placeholder for image */}
-                            <div className="w-full h-64 bg-gray-300"></div>
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold text-gray-800 mb-2">{member.name}</h2>
-                                <p className="text-gray-700 mb-4">{member.description}</p>
-                                <a href={`mailto:${member.email}`} className="text-blue-600 underline hover:text-blue-800">{member.email}</a>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-            </div >
-        </div >
+            </div>
+        </div>
     );
 };
 
