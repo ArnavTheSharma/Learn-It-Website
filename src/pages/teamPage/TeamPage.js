@@ -23,13 +23,13 @@ const teamMembers = [
         name: 'Himal Bokka',
         email: 'Himalkumar2020@gmail.com',
         role: 'Social Media Manager',
-        description: 'Meet Himal Bokka, the Social Media Manager here at Learn It. He is the design manager for the rocketry club at his high school and is part of the social media team at his local library. Himal loves to play sports like football, basketball, and soccer in his free time. Himal is willing to help out Learn It on the social media side of the organization and wants to contribute more to the Learn It group.',
+        description: 'Meet Himal Bokka, the Social Media Manager here at Learn It. Alongside being the design manager for the rocketry club at his high school, he is part of the social media team at his local library. Himal loves to play various sports like football, basketball, and soccer in his free time. Himal is willing to help out Learn It on the social media side of the organization and wants to contribute more to the Learn It group.',
     },
     {
         name: 'Merav Sriram',
         email: 'meravsriram@gmail.com',
         role: 'Communications Coordinator',
-        description: 'Merav Sriram, a rising junior in high school, is the new Communications Coordinator at Learn It Academics. He has made multiple appearances on TV show PL Fanzone, which features soccer enthusiasts as they compete in challenges and enjoys interviewing international soccer stars. Aside from his extensive theoretical knowledge, Merav enjoys competitive soccer, chess and debate, and is a part of NEFC. Merav is excited to contribute to the Learn It team and hopes to organize fun and effective events!',
+        description: 'Meet Merav Sriram, the new Communications Coordinator at Learn It. He has made multiple appearances on TV show PL Fanzone, which features soccer enthusiasts as they compete in challenges, and enjoys interviewing international soccer stars. Merav enjoys competitive soccer, chess, debate, and is a part of NEFC. Merav is excited to contribute to the Learn It team and hopes to organize fun and effective events!',
     },
 ];
 
