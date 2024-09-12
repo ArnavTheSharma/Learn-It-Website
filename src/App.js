@@ -10,27 +10,32 @@ import TeamPage from './pages/teamPage/TeamPage';
 import EventsListPage from './pages/eventsPage/EventsListPage';
 import LoginPage from './pages/LoginPage';
 import CreateAccountPage from './pages/CreateAccountPage';
+import GeneralMemberShip from './pages/joinUsPage/general/GeneralMembership'
+import VolunteerSignup from './pages/joinUsPage/volunteer/VolunteerSignup';
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar/>
+      <NavBar />
       <div id="page-body">
-          <Routes>
-            <Route path="/contact-us" element={<ContactUs />} />
-            <Route path="/events/" element={<EventsListPage />} />
-            <Route path="/events/:eventId" element={<EventsPage />} />
-            <Route path="/" element={<HomePage />} />
-            <Route path="/join-us" element={<JoinUs />} />
-            <Route path="/our-team" element={<TeamPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/create-account" element={<CreateAccountPage />} />
-            <Route path="*" element={<NotFoundPage />} /> 
-          </Routes>
+        <Routes>
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/events/" element={<EventsListPage />} />
+          <Route path="/events/:eventId" element={<EventsPage />} />
+          <Route path="/" element={<HomePage />} />
+
+          <Route path="/join-us" element={<JoinUs />} />
+          <Route path='/general-membership' element={<GeneralMemberShip />} />
+          <Route path="/volunteer-signup" element={<VolunteerSignup />} />
+
+          <Route path="/our-team" element={<TeamPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/create-account" element={<CreateAccountPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
 }
 
 export default App;
-  
