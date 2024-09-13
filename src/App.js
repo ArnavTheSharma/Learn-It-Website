@@ -15,7 +15,6 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar/>
-      <div id="page-body">
           <Routes>
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/events/" element={<EventsListPage />} />
@@ -27,7 +26,6 @@ function App() {
             <Route path="/create-account" element={<CreateAccountPage />} />
             <Route path="*" element={<NotFoundPage />} /> 
           </Routes>
-      </div>
     </BrowserRouter>
   );
 }

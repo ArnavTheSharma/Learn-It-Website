@@ -2,6 +2,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   overflow-x:hidden;
+  background-color: #F7F2F7;
+
 }
 
 h1, h2 {
@@ -20,15 +22,10 @@ button {
   border-color: #DD6C73;
 }
 
-
-#page-body {
+#root{
   height: 100vh;
   width: 100vw;
   background-color: #F7F2F7;
-  position:absolute;
-  top: 0;
-  z-index: -1;
-  display: block;
 }
 
 #page-body h1 {
