@@ -10,7 +10,7 @@ function JoinUs() {
     const [positions,setPositions]=useState(false)
     const [rebrand,setRebrand]=useState(false)
     return (
-        <div className="max-w-[1400px] w-[100%] h-[70%] flex flex-col justify-start items-center  mx-auto">
+        <div className="max-w-[1400px] w-[100%] h-[80%] flex flex-col justify-center items-center  mx-auto">
             <div className="flex justify-center items-center">
                 <div className=" flex justify-center flex-col">
                     <h1>Join Us</h1>
