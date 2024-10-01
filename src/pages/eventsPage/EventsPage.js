@@ -55,12 +55,12 @@ function EventsPage() {
             <img alt="event-img" className="eventImg" src={event.image}></img>
             
             
-            { user
+            {/* { user
                 ? <AddCommentForm
                     eventName={eventId}
                     onEventUpdated={updatedEvent => setEventInfo(updatedEvent)} />
                 : <button style={{ "margin-left": "100px"}} onClick={()=> {navigate('/login')}}>Log in to Comment</button>}
-            <CommentsList comments={eventInfo.comments} />
+            <CommentsList comments={eventInfo.comments} /> */}
         </div>
     );
 }
