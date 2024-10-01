@@ -23,7 +23,7 @@ function HomePage() {
         {/* Upcoming Events Section (Preview)  */}
         {/* Partners Section  */}
         <section id="partners" className="my-7 pt-10" >
-                Partners Section
+                {/* Partners Section */}
         </section>
         </>
 

@@ -37,8 +37,8 @@ function EventsPage() {
     }
 
     return(
-        <div>
-            <h1>{event.title}</h1>
+        <div className="eventContainer">
+            <h2>{event.title}</h2>
             <p className="desc">{event.content}</p>
             {event.presentation
                 ? <a href={`${event.presentation}`} target='_blank'><p style={{"text-align": "center"}}>Presentation Link<CiLink /></p></a>
