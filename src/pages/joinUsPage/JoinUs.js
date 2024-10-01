@@ -10,14 +10,12 @@ function JoinUs() {
     const [positions,setPositions]=useState(false)
     const [rebrand,setRebrand]=useState(false)
     return (
+        <div className="container">
         <div className="max-w-[1400px] w-[100%] h-[80%] flex flex-col justify-center items-center  mx-auto">
             <div className="flex justify-center items-center">
-                <div className=" flex justify-center flex-col">
+                <div className=" flex justify-center flex-col ">
                     <h1>Join Us</h1>
-                    <h4 className="text-center my-0 px-4 text-balance">Want to make an impact in your community whilst improving that resumé?</h4>
-                    <h4 className="text-center my-0 px-4 text-balance">
-                        Consider joining either our incredible team of volunteers or any position openings!
-                    </h4>
+                    <h4 className="text-center my-0 px-4 text-balance">By joining our organization, you can receive verified volunteer/service hours, valuable leadership experience, and make an impact in your community!</h4>
                     <div className=" flex justify-center my-5">
                         <button type="button" className="rounded-full bg-[#314786] text-white text-lg w-[fit-content] border-none py-2">Volunteer Sign Up</button>
                     </div>
@@ -28,8 +26,7 @@ function JoinUs() {
                 <div className="flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%] lg:w-[20%] sm:w-[15%] w-[100%]">
                     <FaPeopleGroup />
                     <h5 className="my-2 text-center">General member application form</h5>
-                    <h5 className="font-light my-2 text-center">These hours will help you with NHS or another community service organization, 
-                        these hours will count towards that as well</h5>
+                    <h5 className="font-light my-2 text-center">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</h5>
                     <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
                         onClick={()=>setGeneral(true)}
                     >
@@ -39,8 +36,8 @@ function JoinUs() {
                 <div className="flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%] lg:w-[20%] sm:w-[15%] w-[100%]">
                     <MdVolunteerActivism />
                     <h5 className="my-2">Volunteer Sign up</h5>
-                    <h5 className="font-light my-2 text-center">Want to make an impact in your community whilst improving that resumé? 
-                        Consider joining either our incredible team of volunteers(and get certified volunteer hours!) or apply for any executive board position openings
+                    <h5 className="font-light my-2 text-center">
+                        Consider joining our incredible team of volunteers (and get certified volunteer hours!) or apply for any executive board position openings! 
                     </h5>
                     <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
                         onClick={()=>setVolunteer(true)}
@@ -137,14 +134,12 @@ function JoinUs() {
                     <li>
                     We are thrilled to share that Learn It is embarking on an exciting 
                     project to remake our website, and we need your help. We are looking for talented frontend and backend 
-                    developers to join our team and contribute to this important initiative. However, the first stage of 
-                    the process is to develop a website prototype using an application such as Figma, 
-                    so if you have experience with app/website prototype development, we would love to have you onboard.
+                    developers to join our team and contribute to this important initiative. 
                     </li>
                     <li>
                     If you are interested in gaining valuable volunteer hours, enhancing your resume, and 
                     opening doors to future leadership positions, we would love to have you on board.
-                     This is a fantastic opportunity to apply your skills, collaborate with a passionate team, and make a meaningful impact.
+                    This is a fantastic opportunity to apply your skills, collaborate with a passionate team, and make a meaningful impact.
                     </li>
                     <li>
                         <a href="">
@@ -157,6 +152,7 @@ function JoinUs() {
                 </ul>
             </Modal>
             
+        </div>
         </div>
     );
 }
