@@ -8,7 +8,7 @@ function EventsListPage() {
     return (
         <div className="EventsListPageContainer">
             <div className='upcomingContainer'>
-                <h1>Upcoming Events</h1>
+                <h1 className='pageTitle'>Upcoming Events</h1>
                 <p style={{"display": "inline-block", width: "80vw", "text-wrap": "balance", "font-size": "x-large",}}>To sign up for any events please fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeEdhXjwm2WP-_6tFYKegiToCikM93qCdg5r4G3dBsWXhcDg/viewform" target="_blank">general member form</a> and all information about upcoming webinars will be forwarded to you!</p>
                 {/* <EventsList events={upcomingEvents} /> */}
             </div>

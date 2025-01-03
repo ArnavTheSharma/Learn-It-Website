@@ -36,8 +36,8 @@ const teamMembers = [
 const Team = () => {
     return (
         <div className="teamPageContainer flex flex-col items-center bg-gray-50 min-h-screen">
-            <div className="bg-blue-100 p-8">
-                <h1 className="font-serif font-bold text-blue-900 text-4xl text-center mb-8">Meet The Team</h1>
+            <div className="bg-blue-100">
+                <h1 className="font-serif font-bold text-blue-900 text-4xl text-center mb-8 pageTitle">Meet The Team</h1>
 
                 {/* Co-Founders Section */}
                 <div className="text-center text-xl font-bold text-blue-800 mb-6">Co-Founders</div>

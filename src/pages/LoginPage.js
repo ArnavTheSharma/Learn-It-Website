@@ -22,7 +22,7 @@ function LoginPage() {
     return(
         <div className="loginContainer">
             <div className="box">
-                <h1 style={{"text-align": "start"}}>Login to your Account</h1>
+                <h1 className='pageTitle' style={{"text-align": "start"}}>Login to your Account</h1>
                 {error && <p className="error">{error}</p>}
                 <input 
                     placeholder="Your email address"

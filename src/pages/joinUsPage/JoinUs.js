@@ -10,10 +10,10 @@ function JoinUs() {
     const [positions,setPositions]=useState(false)
     const [rebrand,setRebrand]=useState(false)
     return (
-        <div className="my-20 max-w-[1400px] w-[100%] h-[80%] flex flex-col justify-center items-center  mx-auto">
+        <div className=" max-w-[1400px] w-[100%] h-[80%] flex flex-col justify-center items-center  mx-auto">
             <div className="flex justify-center items-center">
                 <div className=" flex justify-center flex-col ">
-                    <h1>Join Us</h1>
+                    <h1 className='pageTitle'>Join Us</h1>
                     <h4 className="text-center my-0 px-4 text-balance">By joining our organization, you can receive verified volunteer/service hours, valuable leadership experience, and make an impact in your community!</h4>
                     <div className=" flex justify-center my-5">
                         <button type="button" className="rounded-full bg-[#314786] text-white text-lg w-[fit-content] border-none py-2">Volunteer Sign Up</button>

@@ -11,7 +11,7 @@ function HomePage() {
        <>
         {/* Landing page */}
         <div className="homeContainer">
-            <h1>Your Path to College and Career Success Starts <span>Here</span></h1>
+            <h1 className='pageTitle'>Your Path to College and Career Success Starts <span>Here</span></h1>
             <button className="joinUsButton" onClick={() => {navigate('/join-us');}}>Join US</button>
         </div>
 
