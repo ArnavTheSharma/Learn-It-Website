@@ -89,7 +89,7 @@ const Team = () => {
                     </div>
 
                     {/* Communications Coordinator Section */}
-                    <div className="rightCard w-full h-full md:w-1/3 mb-96 px-4">
+                    <div className="rightCard w-full h-full md:w-1/3 px-4">
                         <div className="text-center text-xl font-bold text-blue-800 mb-6">Communications Coordinator</div>
                         <div className="grid grid-cols-1 gap-8">
                             {teamMembers.filter(member => member.role === 'Communications Coordinator').map((member) => (

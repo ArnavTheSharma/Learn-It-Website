@@ -1,36 +1,49 @@
 .homeContainer {
     height: 800px;
-    padding-top: 10px;
+    padding: 10px;
     background-image: url("homePicture.png");
     background-size:cover;
     background-color: #8C9AB1;
-    margin-top: -5%;
-    padding-top: 5%;
     z-index:-1;
 }
-
-
 .homeContainer h1 {
     text-align: left;
+    padding-top: 20px;
     margin-left: 5%;
+    margin-bottom: -5px;
     font-size:60px;
-    width: 50%;
+    width: 40%;
     text-wrap:balance;
-    margin-top: 10%;
-    -webkit-text-fill-color: #8C9AB1; 
+    -webkit-text-fill-color: #314786; 
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: white;    
 }
 
-.homeContainer span {
-    -webkit-text-fill-color: transparent; 
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,#C8E5E6 10%,#7D84A1 29%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    animation: textclip 2s linear infinite;
+.homeContainer h2 {
+    position: relative;
+    text-align: left;
+    margin-left: 5%;
+    width: 40%;
+    top:0;
+    text-wrap: balance;
+    color: #C8E5E6;
 }
 
+.titleWrapper h2 span {
+    -webkit-text-fill-color: transparent; 
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg,#E0A4C6 10%,#ffffff 29%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    animation: textclip 3s ease-in infinite;
+}
+
+.titleWrapper {
+    padding-bottom: 30px;
+    background-color: #314786;
+    clip-path: polygon(2% 0%, 30% 0%, 50% 50%, 30% 100%, 2% 100%);
+}
+ 
 .joinUsButton {
     width: 15%;
     margin-left: 5%;
@@ -48,26 +61,47 @@
 @media (max-width: 1000px) {
     .homeContainer h1 {
         font-size: 35px;
-        width: 60%;
-        margin-top: 15%;
         background-repeat: repeat-y;
+    }
+    .homeContainer h2 {
+        font-size: 3vw;
     }
     
     .homeContainer {
         height: 500px;
-        background-size: 120% 100%;
+        background-size: 150% 100%;
         background-repeat: no-repeat;
     }
 
     .joinUsButton {
-        width: 30%;
+        width: 25%;
     }
 
 }
 
 @media (max-width: 600px) {
-    .homeContainer h1 {
-        margin-top: 25%;
-        width: 90%;
+    .homeContainer {
+        height: 300px;
+        background-size: 150% 100%;
+        background-repeat: no-repeat;
+    }
+    .titleWrapper {
+        margin-top: -30px;
+        padding-bottom: 15px;
+        clip-path: polygon(2% 0%, 30% 0%, 60% 50%, 30% 100%, 2% 100%);
+    }
+    .titleWrapper h1 {
+        -webkit-text-fill-color: white; 
+        -webkit-text-stroke-width: 0px;
+        font-size: 5vw;
+        padding-top: 15px;
+    }
+    .titleWrapper h2 {
+        font-size: 2.5vw;
+    }
+    .joinUsButton {
+        font-size: 2.5vw;
+        padding: 5px 0 5px 0;
+        width: 20%;
     }
 }

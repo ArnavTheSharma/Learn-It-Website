@@ -12,8 +12,11 @@ function HomePage() {
        <>
         {/* Landing page */}
         <div className="homeContainer">
-            <h1 className='pageTitle'>Your Path to College and Career Success Starts <span>Here</span></h1>
-            <button className="joinUsButton" onClick={() => {navigate('/join-us');}}>Join US</button>
+            <div className="titleWrapper">
+                <h1 className='pageTitle'>Learn It:</h1>
+                <h2><span>Bridging Gaps, Creating Opportunities</span></h2>
+                <button className="joinUsButton" onClick={() => {navigate('/join-us');}}>Join US</button>
+            </div>
         </div>
 
         {/* About Learn It, certifications, Mission */}
