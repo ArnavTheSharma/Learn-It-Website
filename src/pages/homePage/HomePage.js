@@ -1,3 +1,4 @@
+import "../../App.css";
 import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
 import Section2 from "./section2/section2";

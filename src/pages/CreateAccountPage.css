@@ -20,3 +20,7 @@
 .box button {
     padding: 3%;
 }
+
+.box input {
+    margin:10px 0 10px 0;
+}

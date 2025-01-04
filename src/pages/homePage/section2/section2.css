@@ -1,12 +1,14 @@
 .section2Container {
+    min-height:200px;
+    height:fit-content;
+    overflow: hidden;
     padding: 5%;
     display: grid;
     grid-template-columns: 50% 25% 25%;
     grid-template-areas:
         'title middle right'
         'text middle right'
-        'text middle right';
-        gap: 30px;
+        '. middle right';
 }
 
 .title {
@@ -40,38 +42,55 @@
 .certificateText {
     font-weight:bold;
     color: #5654A3;
-    text-shadow: 2px 2px #C8E5E6;
+    text-wrap:balance;
     text-align: center;
-    text-wrap: balance;
     font-size:1.5vw;
     position: absolute;
     top: 0;
+    max-width: 90%;
+    z-index: -1;
+    padding-left: 8px;
 }
 
 .section2Container img {
     opacity: 1;
-    transition: opacity 1.5s ease;
-    backface-visibility: hidden; 
+    transition: opacity 1s ease;
     width: 20vw;
-    position: absolute;
-    z-index: 1;
 }
 
 .section2Container img:hover {
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
-@media (max-width: 1000px) {
-    .section2Container {
-        grid-template-columns: 40% 30% 30%;
-        grid-template-rows: 20% 80%;
-        grid-template-areas:
-            'title middle right'
-            'text middle right';
-        gap: 10px;
-    }
-
+@media (max-width: 900px) {
     .middle, .right {
         margin-left: 10%;
+    }
+}
+
+@media (max-width:800px) {
+    .right, .middle {
+        width: 30vw;    
+    }
+    .certificateText {
+        font-size:2.3vw;
+    }
+    .section2Container img {
+        width: 30vw;
+    }
+    .section2Container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        'title middle'
+        'text right '
+    }
+    .title {
+        font-size:3.5vw;
+        margin-top: 30%;
+    }
+    .text {
+        font-size:2.5vw;
+        transform:translateY(-40%);
     }
 }

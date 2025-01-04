@@ -34,12 +34,12 @@ button {
   position:absolute;
   top: 0;
   z-index: -1;
-  display: block;
 }
 
 .pageTitle {
-  padding-top: 100px;
+  margin-top: 125px;
 }
+ 
 
 input, textarea {
   display: block;
@@ -58,6 +58,3 @@ input, textarea {
   background-color: pink;
 }
 
-@media (max-width: 1000px) {
-
-}

@@ -1,8 +1,8 @@
 const NotFoundPage = () => {
     return(
         <>
-            <h1>404: Page Not Found</h1>
-            <button className="button" href="/">Home Page</button>    
+            <h1 className="pageTitle">404: Page Not Found</h1>
+            <button className="button" style={{margin:"auto"}} href="/">Home Page</button>    
         </>
     );
 }

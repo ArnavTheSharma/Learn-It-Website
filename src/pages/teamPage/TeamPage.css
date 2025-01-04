@@ -1,7 +1,5 @@
 .teamPageContainer {
     background-color: #F7F2F7;
-    margin-top: -7%;
-    padding-top: 7%;
     text-align: center;
 }
 .teamContainer {
@@ -55,7 +53,25 @@ hr {
     align-items: center;
 }
 
+.leftCard {
+    margin-left:10vw;
+    height: 100%;
+}
+
+.rightCard {
+    margin-right:10vw;
+    height: 100%;
+}
 @media (max-width: 1000px) {
+    .leftCard, .rightCard {
+        margin:0;
+    }
+    .leftCard {
+        width: 50%;
+    }
+    .rightCard {
+        width: 50%;
+    }   
     .teamContainer {
         display: block;
     }
@@ -73,4 +89,15 @@ hr {
         width: 80%;
         margin-left: 10%;
     }
+}
+
+@media (max-width: 700px) {
+    .cardsParent{
+        flex-direction: column;
+    }
+    .leftCard, .rightCard {
+        width: 80%;
+        margin: 10%;
+    }
+
 }

@@ -7,15 +7,11 @@
     padding-top: 7%;
 }
 
-.EventsListContainer h1 {
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 2px 2px 2px rgb(19, 9, 9);
-}
 
 .eventContainer {
     padding-top: -9%;
     margin-top: 9%;
+    height: 100%;
 }
 
 .desc {
@@ -42,10 +38,6 @@
     overflow: hidden;
 }
 
-
-#add-comment-form button {
-    width: 320px;
-  }
   
   
 .pastEventsContainer {
@@ -54,11 +46,14 @@
         'a a a a'
         'a a a a'
         'a a a a';
-    gap: 20px;
+    gap: 10px;
 } 
 
 .event-list-item {
     border:solid #3148863d;
+}
+.event-list-item h1 {
+    font-size: 1.7vw;
 }
 .event-list-item h3 {
     grid-area: a;
@@ -79,6 +74,8 @@
 
 #add-comment-form {
     border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    width: 90%;
     padding: 16px;
 }
 
@@ -103,20 +100,46 @@
 
 .hackathonImage {
     margin: auto;
-    max-height: 30vh;
+    max-height: 15vw;
     overflow-y: scroll;
     scrollbar-color: #314786 #b63e6878;
     width: 40%;
-    scrollbar-width:thin;  
+    scrollbar-width:thin; 
 }
 
 .EventsListPageContainer a{
     text-decoration: none;
 }
 
-.EventsListPageContainer a:hover {
-    color: #B63E68;
+.hackathonContainer a:link {
+    color: #2200CC;
     text-decoration: underline;
+}
+.hackathonContainer a:visited {
+    color:purple;
+}
+.hackathonContainer h3:hover {
+    color: #B63E68;
+    text-decoration-color: #B63E68;
+}
+
+.addCommentParent h3 {
+    margin-bottom:0%;
+}
+.buttonTextAreaParent {
+    padding-left: 5%;
+    width: 90%;
+    display: inline-block;
+}
+.buttonTextAreaParent textarea {
+    width: 100%;
+}
+.buttonTextAreaParent button {
+    width:30%;
+    float:inline-end;
+    margin-bottom: 1%;
+    position:relative;
+    box-sizing: content-box;
 }
 
 @media (max-width: 1500px) {
@@ -129,11 +152,51 @@
 @media (max-width: 1000px) {
     .pastEventsContainer {
         grid-template-areas:
-        'a a';
+        'a a a';
+    }
+    .event-list-item h1 {
+        font-size: 2vw;
     }
 
     .eventContainer {
         padding-top: -16%;
         margin-top: 16%;
     }    
+    .event-list-item h1 {
+        font-size: 2vw;
+    }
+    .hackathonImage {
+        width: 70%;
+        max-height: 20vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .pastEventsContainer {
+        grid-template-areas:
+        'a a';
+    }
+    .event-list-item h1 {
+        font-size: 3vw;
+    }
+    .hackathonImage {
+        max-height: 25vw;
+    }
+    .buttonTextAreaParent button {
+        width: 90%;
+    }
+}
+@media (max-width:600px) {
+    .hackathonImage {
+        max-height: 35vw;
+    }
+}
+
+@media (max-width:500px) {
+    .event-list-item img {
+        height: 15vh;
+    }
+    .hackathonImage {
+        max-height: 45vw;
+    }
 }

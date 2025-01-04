@@ -1,3 +1,5 @@
+import "../../App.css";
+import "./JoinUs.css";
 import { BsExclamationCircle } from "react-icons/bs";
 import { FaPeopleGroup, FaSuitcase } from "react-icons/fa6";
 import { MdVolunteerActivism } from "react-icons/md";
@@ -10,21 +12,21 @@ function JoinUs() {
     const [positions,setPositions]=useState(false)
     const [rebrand,setRebrand]=useState(false)
     return (
-        <div className=" max-w-[1400px] w-[100%] h-[80%] flex flex-col justify-center items-center  mx-auto">
+        <div className="joinContainer max-w-[1400px] w-[100%] flex flex-col justify-center items-center mx-auto">
             <div className="flex justify-center items-center">
                 <div className=" flex justify-center flex-col ">
-                    <h1 className='pageTitle'>Join Us</h1>
+                    <h1 className="pageTitle">Join Us</h1>
                     <h4 className="text-center my-0 px-4 text-balance">By joining our organization, you can receive verified volunteer/service hours, valuable leadership experience, and make an impact in your community!</h4>
                     <div className=" flex justify-center my-5">
-                        <button type="button" className="rounded-full bg-[#314786] text-white text-lg w-[fit-content] border-none py-2">Volunteer Sign Up</button>
+                        <button type="button" className="volunteerSignUpButton rounded-full bg-[#31478600] text-[#314786] text-lg w-[fit-content] py-2">Volunteer Sign Up</button>
                     </div>
                 </div>
             </div>
             
-            <div className="flex items-center justify-between w-[90%] my-4 md:flex-nowrap flex-wrap gap-x-4 gap-y-4 pb-10">
-                <div className="flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%] lg:w-[20%] sm:w-[15%] w-[100%]">
+            <div className="flex items-center justify-normal md:w-[100%] w-[90%] lg:flex-nowrap my-4 mx-0 flex-wrap gap-x-4 md:gap-x-2 gap-y-4 pb-10 h-3/6">
+                <div className="bucket1 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%]">
                     <FaPeopleGroup />
-                    <h5 className="my-2 text-center">General member application form</h5>
+                    <h5 className="my-2 text-center">General member application</h5>
                     <h5 className="font-light my-2 text-center">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</h5>
                     <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
                         onClick={()=>setGeneral(true)}
@@ -32,7 +34,7 @@ function JoinUs() {
                         Apply
                     </button>
                 </div>
-                <div className="flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%] lg:w-[20%] sm:w-[15%] w-[100%]">
+                <div className="bucket2 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%]">
                     <MdVolunteerActivism />
                     <h5 className="my-2">Volunteer Sign up</h5>
                     <h5 className="font-light my-2 text-center">
@@ -44,7 +46,7 @@ function JoinUs() {
                         More
                     </button>
                 </div>
-                <div className="flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%] lg:w-[20%] sm:w-[15%] w-[100%]">
+                <div className="bucket3 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%] ">
                     <FaSuitcase />
                     <h5 className="my-2 text-center">New position openings</h5>
                     <h5 className="font-light my-2 mt-0 text-center">
@@ -61,12 +63,11 @@ function JoinUs() {
                         More
                     </button>
                 </div>
-                <div className="flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%] lg:w-[20%] sm:w-[15%] w-[100%]">
+                <div className="bucket4 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%] ">
                     <BsExclamationCircle />
-                    <h5 className="my-2 text-center">NEW Opportunity! Join our website rebranding team</h5>
+                    <h5 className="my-2 text-center"><span>NEW Opportunity!</span> Join our website rebranding team</h5>
                     <h5 className="font-light my-2 text-center">
-                    We hope this message finds you well! We are thrilled to share that Learn It is embarking on an exciting project 
-                    to remake our website, and we need your help.
+                    We are thrilled to share that Learn It is embarking on an exciting project to improve our website, and we need your help.
                     </h5>
                     <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
                         onClick={()=>setRebrand(true)}
@@ -77,7 +78,7 @@ function JoinUs() {
             </div>
             {/* Modal for general membership */}
             <Modal open={general} change={setGeneral}>
-                <p>Form will be available soon</p>
+                <p>Integrated form will be available soon, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeEdhXjwm2WP-_6tFYKegiToCikM93qCdg5r4G3dBsWXhcDg/viewform" target="_blank">google form</a></p>
             </Modal>
             {/* Modal for volunteers */}
             <Modal open={volunteer} change={setVolunteer}>
@@ -86,7 +87,7 @@ function JoinUs() {
                     <li>
                     Want to make an impact in your community all while improving that resumé? Consider joining our 
                     incredible team of volunteers (and get certified volunteer hours!) 
-                    or apply for any executive board position openings! <a href="#"> Volunteer Sign Up Form</a> 
+                    or apply for any executive board position openings! <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpXgiOqyChZjeGbwQFzV4z08Qyn-r9kAKj8pWbEvkaqAvZ6g/viewform" target="_blank"> Volunteer Sign Up Form</a> 
                     </li>
                     <li>
                     As Learn It is now certified, the volunteer hours you gain by contributing to our organization will have that much more merit! 
@@ -97,7 +98,7 @@ function JoinUs() {
                     know who is in need of volunteer hours and do not hesitate to reach out with any questions, concerns, or feedback! 
                     </li>
                 </ul>
-                <a href="#" className="ml-10">Sign Up</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpXgiOqyChZjeGbwQFzV4z08Qyn-r9kAKj8pWbEvkaqAvZ6g/viewform" target="_blank" className="ml-10">Sign Up</a>
             </Modal>
             {/* Modal for open positions */}
             <Modal open={positions} change={setPositions}>
@@ -107,12 +108,12 @@ function JoinUs() {
                     International Relations Manager: Learn It is officially opening up a new role, an International Manager. 
                     As Learn It continues to grow worldwide, we are looking for a candidate who can start new chapters of 
                     Learn It around the world with a team of ambassadors
-                     that they will work with, ultimately increasing the total number of members of Learn It. Interested? <a href="#">Apply</a> 
+                     that they will work with, ultimately increasing the total number of members of Learn It. Interested? <a href="https://docs.google.com/forms/d/e/1FAIpQLScaN-KBg3d1NcdeD0SaPU14FC1-4xhCBsbb-hSCLXjS2NYS-w/viewform?usp=sf_link" target="_blank">Apply</a> 
                     </li>
                     <li>
                     Social media co-manager: The social media co-manager will have access to our TikTok, Instagram, 
                     Facebook, and Youtube accounts and will receive 1 volunteer hour for every 2 posts. 
-                    This also serves as a great leadership role as Learn It is continuing to expand globally. <a href="#">Apply</a> 
+                    This also serves as a great leadership role as Learn It is continuing to expand globally. <a href="https://docs.google.com/forms/d/e/1FAIpQLScfzfA5vRGjasF1_9zzx-qOH_LCMj82ZgDMuBi-Zf-9-4NHOA/viewform" target="_blank">Apply</a> 
                         <ul><li>Responsibilities Include:</li></ul>
                         <ol>
                             <li>
@@ -141,8 +142,8 @@ function JoinUs() {
                     This is a fantastic opportunity to apply your skills, collaborate with a passionate team, and make a meaningful impact.
                     </li>
                     <li>
-                        <a href="">
-                        Please send us your email address if you are interested, and we will forward it to our tech lead for further coordination.
+                        <a href="../contact-us">
+                        Please contact us, and we will forward it to our tech lead for further coordination.
                         </a>
                     </li>
                     <p>

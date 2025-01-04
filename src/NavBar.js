@@ -11,13 +11,13 @@ function NavBar() {
     return (
         <>
         <nav>
-            <div><Link to="/" ><img className="logo" src={logo}></img></Link></div>
-            <li><Link to="/">Home</Link></li>
+            <div><Link to="/"><img className="logo" src={logo}></img></Link></div>
+            <li><Link to="/" >Home</Link></li>
             <li><Link to="/events">Events</Link></li>
             <li><Link to="/join-us">Join Us</Link></li>
             <li><Link to="/our-team">Our Team</Link></li>
             <li><Link to="/contact-us">Contact Us</Link></li>
-            <li>
+            {/* <li>
                 {user
                     ? <a onClick={() => {
                         signOut(getAuth());
@@ -26,7 +26,7 @@ function NavBar() {
                     : <a onClick={() => {
                         navigate('/login');
                     }}>Log In</a>}
-            </li>
+            </li> */}
 
             <div id="hamburger-icon" className="hamburger-icon" onClick={dropdownReveal}>
                 <div className="bar1"></div>
