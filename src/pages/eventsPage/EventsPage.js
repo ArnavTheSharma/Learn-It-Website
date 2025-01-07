@@ -40,6 +40,7 @@ function EventsPage() {
         <div className="eventContainer">
             <h2>{event.title}</h2>
             <p className="desc">{event.content}</p>
+            <p className="desc">{event.content2}</p>
             {event.presentation
                 ? <a href={`${event.presentation}`} target='_blank'><p style={{"text-align": "center"}}>Presentation Link<CiLink /></p></a>
                 : <></>

@@ -47,6 +47,7 @@
         'a a a a'
         'a a a a';
     gap: 10px;
+    margin-top: 5%;
 } 
 
 .event-list-item {
@@ -55,7 +56,7 @@
 .event-list-item h1 {
     font-size: 1.7vw;
 }
-.event-list-item h3 {
+.event-list-item h2 {
     grid-area: a;
     color: #643d76;
     text-wrap:balance;
@@ -185,10 +186,20 @@
     .buttonTextAreaParent button {
         width: 90%;
     }
+    .event-list-item p {
+        font-size: calc(1.5vh + 1.5vw);
+    }
+    
 }
 @media (max-width:600px) {
     .hackathonImage {
         max-height: 35vw;
+    }
+    .pastEventsContainer {
+        grid-template-areas:
+            'a'
+            'a'
+            'a';
     }
 }
 

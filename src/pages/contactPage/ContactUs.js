@@ -23,23 +23,23 @@ function ContactUs() {
         }
     }
     return(
-       <div className="contactUsPageContainer md:flex w-[fit-content] h-[100%] sm:mx-auto justify-center items-start max-w-[800px] p-6 sm:py-12">
-            <div className="bg-[white] md:w-1/2 sm:w-1/2 w-[fit-content] sm:p-10 p-5 h-[100%]">
+       <div className="contactUsPageContainer md:flex w-[fit-content] h-[100%] sm:mx-auto justify-center items-start p-6 sm:py-12">
+            <div className="form bg-[white] md:w-1/2 sm:w-1/2 w-[fit-content] p-10 h-[100%]">
                 <div className='flex justify-center items-center'> <img src={logo} className='w-[28%]' /> </div>
                 <h3 className="contact-title">Contact Us</h3>
                 <label htmlFor="email">
-                    <input type="email" name="email" id="email" placeholder="Your Email" className="bg-[#DAB8C5] border-white pl-4" value={email} onChange={(e)=>setEmail(e.target.value)} />
+                    <input type="email" name="email" id="email" placeholder="Your Email" className="bg-[#DAB8C5] w-[90%] border-white pl-4" value={email} onChange={(e)=>setEmail(e.target.value)} />
                 </label>
                 <label htmlFor="message">
-                    <textarea name="message" id="message" placeholder="Your Message" className="bg-[#DAB8C5] border-white pl-4" value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
+                    <textarea name="message" id="message" placeholder="Your Message" className="bg-[#DAB8C5] w-[90%] border-white pl-4" value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
                 </label>
                 <button type="submit" className="p-4 py-2 text-lg bg-[#DAB8C5] w-full border-white" onClick={(e)=>handleSend(e)}>SEND</button>
             </div>
-            <div className="bg-[#DAB8C5] md:w-1/2 sm:w-1/2 w-[fit-content] sm:p-10 p-5 h-[100%]">
+            <div className="info bg-[#DAB8C5] md:w-3/5 sm:w-1/2 w-[fit-content] p-10 h-[100%]">
                 <div>
-                    <p className='bg-white rounded-lg p-4 text-sm flex items-center gap-x-1 hover:cursor-pointer'><span>Email <CgMail /></span>:<span>information.learnit@gmail.com</span>   </p>
-                    <p className='bg-white rounded-lg p-4 text-sm flex items-center gap-x-1 hover:cursor-pointer'> <span> DM us on Instagram <BsInstagram />:</span> <span><a href="instagram.com/learn.it_academics">@learn.it_academics</a></span>   </p>
-                    <p className='bg-white rounded-lg p-4 text-sm flex items-center gap-x-1 hover:cursor-pointer'>DM us on Tiktok <FaTiktok />:  <a href="tiktok.com/learn.it_academics">@learn.it_academics</a> </p> 
+                    <p className='bg-white rounded-lg p-4 text-sm flex items-center gap-x-1 hover:cursor-pointer text-wrap'><span>Email <CgMail /></span>:<a className="infoText" href="mailto:information.learnit@gmail.com">information.learnit@gmail.com</a>   </p>
+                    <p className='bg-white rounded-lg p-4 text-xs flex items-center gap-x-1 hover:cursor-pointer'> <span> DM us on Instagram <BsInstagram />:</span> <span><a className="infoText" href="https://www.instagram.com/learn.it_academics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@learn.it_academics</a></span>   </p>
+                    <p className='bg-white rounded-lg p-4 text-sm flex items-center gap-x-1 hover:cursor-pointer'>DM us on Tiktok <FaTiktok />:  <a className="infoText" href="https://www.tiktok.com/@learn.it_academics?is_from_webapp=1&sender_device=pc" target="_blank">@learn.it_academics</a> </p> 
                 </div>
                 <div>
                     <div className='bg-white rounded-lg p-4 relative mb-3'>
@@ -51,11 +51,11 @@ function ContactUs() {
                         { showFounders &&
                             <div class="absolute top-[3em] left-0 z-10 origin-left w-full divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none w-full" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1 pl-4" role="none">
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">piyusha.majgaonkar@gmail.com</a>
+                                <a className="infoText" href="mailto:piyusha.majgaonkar@gmail.com" class="infoText block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">piyusha.majgaonkar@gmail.com</a>
 
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">sunainapal2006@gmail.com</a>
+                                <a className="infoText" href="mailto:sunainapal2006@gmail.com" class="infoText block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">sunainapal2006@gmail.com</a>
 
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">itsaryandas15@gmail.com</a>
+                                <a className="infoText" href="mailto:itsaryandas15@gmail.com" class="infoText block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">itsaryandas15@gmail.com</a>
                             </div>
                         </div>}
                     </div>
@@ -68,20 +68,20 @@ function ContactUs() {
                         { showSMM &&
                             <div class="absolute top-[3em] z-10 left-0 origin-left w-full divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none w-full" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1 pl-4" role="none">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">Mariahboyce3@gmail.com</a>
+                            <a href="mailto:mariahboyce3@gmail.com" class=" infoText block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">mariahboyce3@gmail.com</a>
                             </div>
                         </div>}
                     </div>
                     <div className='bg-white rounded-lg p-4 relative mb-3'>
-                        <p className=' text-sm flex items-center gap-x-1 justify-between hover:cursor-pointer my-0'>
-                            <span>Email <CgMail /> the Communications Coordinators</span>
+                        <p className=' text-xs flex items-center gap-x-1 justify-between hover:cursor-pointer my-0'>
+                            <span>Email <CgMail /> the Communications Coordinator</span>
                             {!showComCo && <MdKeyboardArrowDown className='text-base' onClick={()=>setShowComCo(true)} />} 
                             {showComCo && <MdKeyboardArrowUp className='text-base' onClick={()=>setShowComCo(false)} />} 
                         </p>
                         { showComCo &&
                             <div class="absolute top-[3em] z-10 left-0 origin-left w-full divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none w-full" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1 pl-4" role="none">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">Meravsriram@gmail.com</a>
+                            <a href="mailto:meravsriram@gmail.com" class="infoText block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">meravsriram@gmail.com</a>
                             </div>
                         </div>}
                     </div>

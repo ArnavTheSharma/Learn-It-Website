@@ -1,7 +1,11 @@
 .logo {
-  height:80px;
+  height:70px;
   float: left;
   overflow: hidden;
+  /* background-color: #C8E5E6; */
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  /* backdrop-filter: sepia(50%); */
 }
 
 nav {

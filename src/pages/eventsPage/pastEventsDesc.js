@@ -6,6 +6,7 @@ import danny_tio_9_3 from "./eventImages/pastEvents/danny_tio_9_3.png";
 import garret_jensen_8_8 from "./eventImages/pastEvents/garret_jensen_8_8.png";
 import impellingo_scholarships_7_21 from "./eventImages/pastEvents/impellingo_scholarships_7_21.png";
 import khia_thomas_9_2 from "./eventImages/pastEvents/khia_thomas_9_2.png";
+import learn_it_falls_hack from "./eventImages/pastEvents/learn_it_falls_hack.png"
 import phillip_sarpong_8_1 from "./eventImages/pastEvents/phillip_sarpong_8_1.png";
 import robin_eurgubian_7_13 from "./eventImages/pastEvents/robin_eurgubian_7_13.png";
 import sairy_cohen_9_9 from "./eventImages/pastEvents/sairy_cohen_9_9.png";
@@ -13,7 +14,17 @@ import sophie_smith_8_6 from "./eventImages/pastEvents/sophie_smith_8_6.png";
 import tracye_lawyer_3_19 from "./eventImages/pastEvents/tracye_lawyer_3_19.png";
 import learn_it_logo from "../../companyLogos/learn-it-logo.png";
 
+
 const pastEvents = [
+    
+    {
+        name: 'learn_it_falls_hacks',
+        title: 'Learn It: Fall Hacks',
+        content: ["This is a competitive hackathon hosted by Learn It that aims to harness the power of technology to fuel STEM innovation. Our mission is to bring together passionate individuals from diverse backgrounds to tackle pressing sustainability issues worldwide. Whether you’re an experienced programmer or don’t know coding, you have a place in our hackathon and an equal chance to win."],
+        content2: ["Participants in Learn It’s Hackathon are encouraged to focus their efforts on making sustainability accessible to everyone. We believe that technology has the potential to revolutionize the way we approach global health issues and we welcome fresh ideas and creative solutions."],
+        image: learn_it_falls_hack,
+        resources: "https://learn-it-fall-hacks.devpost.com/",
+    },
 
     {
         name: 'andreas_stamatakis_3_22',
@@ -76,7 +87,7 @@ const pastEvents = [
         image: khia_thomas_9_2,
         recording: "https://youtu.be/aYsb7VzV5ro",
     },
-    
+   
     {
         name: 'phillip_sarpong_8_1',
         title: 'Career Exploration Webinar - Phillip Sarpong',
