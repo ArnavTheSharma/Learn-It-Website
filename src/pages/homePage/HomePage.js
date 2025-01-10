@@ -14,7 +14,7 @@ function HomePage() {
             {/* <img className="backgroundImage" src={homeImage}></img> */}
             <div className="titleWrapper">
                 <h1>Learn It</h1>
-                <h2><span>Your STEM Future, Simplified</span></h2>
+                <h2><span>Bridging Gaps, Creating Opportunities</span></h2>
                 <button className="joinUsButton" onClick={() => {navigate('/join-us');}}>Join US</button>
             </div>
             <img className="image" src={homeImage}></img>

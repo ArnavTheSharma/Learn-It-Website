@@ -18,7 +18,7 @@ function JoinUs() {
                     <h1 className="pageTitle">Join Us</h1>
                     <h4 className="text-center my-0 px-4 text-balance">By joining our organization, you can receive verified volunteer/service hours, valuable leadership experience, and make an impact in your community!</h4>
                     <div className=" flex justify-center my-5">
-                        <button type="button" className="volunteerSignUpButton rounded-full bg-[#31478600] text-[#314786] text-lg w-[fit-content] py-2">Volunteer Sign Up</button>
+                        {/* <button type="button" className="messageButton rounded-full bg-[#31478600] text-[#314786] text-lg w-[fit-content] py-2">Get Involved Today</button> */}
                     </div>
                 </div>
             </div>

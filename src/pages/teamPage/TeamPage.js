@@ -62,7 +62,7 @@ const Team = () => {
                 {/* Combined Description for Co-Founders */}
                 <div className="text-center p-6 bg-white rounded-lg shadow-sm">
                     <img src={Founders} className="w-full rounded-lg"></img>
-                    <p className="text-gray-700 text-lg">
+                    <p className="text-pretty text-gray-700 text-lg">
                         Hi Everyone, we are the Co-Founders of Learn It! We are seniors from Massachusetts and we've always had a passion for learning and making a difference in our community.
                         What better way to do that than to spread joy through our program? We hope you join us on this journey and learn a little something along the way!
                     </p>
@@ -80,7 +80,7 @@ const Team = () => {
                                     <img src={Himal} className='w-full'></img>
                                     <div className="p-6">
                                         <h2 className="text-2xl font-semibold text-gray-800 mb-2">{member.name}</h2>
-                                        <p className="text-gray-700 mb-4 text-balance">{member.description}</p>
+                                        <p className="text-gray-700 mb-4 text-pretty">{member.description}</p>
                                         <a href={`mailto:${member.email}`} className="text-blue-600 underline hover:text-blue-800">{member.email}</a>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@ const Team = () => {
                                     <img src={Merav} className='w-full pt-3'></img>
                                     <div className="p-6">
                                         <h2 className="text-2xl font-semibold text-gray-800 mb-2">{member.name}</h2>
-                                        <p className="text-gray-700 mb-4 text-balance">{member.description}</p>
+                                        <p className="text-gray-700 mb-4 text-pretty">{member.description}</p>
                                         <a href={`mailto:${member.email}`} className="text-blue-600 underline hover:text-blue-800">{member.email}</a>
                                     </div>
                                 </div>
