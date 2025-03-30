@@ -4,6 +4,7 @@ import { MdVolunteerActivism } from 'react-icons/md';
 import { FcConferenceCall } from 'react-icons/fc';
 import { useState } from 'react';
 import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Section3 = () => {
     const [members,setMembers]=useState(1000)
@@ -19,35 +20,51 @@ const Section3 = () => {
         // window.scrollTo()
     }
 
-    // useCountUp({
-    //     enableScrollSpy: true,
-    //     scrollSpyDelay: 1000,
-    //   });
-    
+
 
     return ( 
         <div className="section3 flex justify-center items-center py-10">
-            <div className=" flex justify-center items-center border-[.3em] sm:flex-row flex-row border-white flex-wrap sm:gap-x-0 gap-x-2">
-                <div className="bg-[#cccccc] sm:p-20 p-12 flex justify-center items-center" onClick={()=>handlePartnersClick()}>
+            <div className="flex justify-center items-center border-[.3em] sm:flex-row flex-row border-white flex-wrap gap-5">
+                <div className="bg-[#34699d] sm:w-[150px] w-[100px] xl:w-[15vw]  sm:p-auto p-5 sm:py-20 py-7 flex justify-center items-center md:border-4 rounded-md border-indigo-500" onClick={()=>handlePartnersClick()}>
                         <div className='flex flex-col justify-center items-center'>
-                            <FaHandshake className='rotate-90 text-red-400 w-full text-3xl' />
-                            <p id="partners" className='text-4xl font-bold mr-0 my-2'>{<CountUp start={0} end={partners} duration={3} />}+</p>
-                            <p className='text-sm font-bold mr-0'>NGO Partners</p>
+                            <FaHandshake className='rotate-90 text-white w-full text-3xl' />
+                            <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                                {({ isVisible }) => (
+                                <div>
+                                    {isVisible ? <p id="partners" className='sm:text-4x1 text-white font-bold mr-0 my-2'>{<CountUp start={0} end={partners} duration={3} />}+</p> : <p id="partners" className='sm:text-4x1 text-white font-bold mr-0 my-2'>100+</p>}
+                                </div>
+                                )}
+                            </VisibilitySensor>
+                            <p className='text-sm text-white font-bold mr-0'>NGO Partners</p>
                         </div>
                 </div>
-                <div className="bg-[#b9c2d2] sm:bg-white sm:p-20 p-12 flex justify-center items-center">
+                <div className="bg-[#e0a4c6] sm:w-[150px] w-[100px] xl:w-[15vw] sm:p-auto  p-5 py-7 sm:py-20 flex justify-center rounded-md items-center">
                     <div className='flex flex-col justify-center items-center'>
-                        <MdVolunteerActivism className=' text-red-400 w-full text-3xl' />
-                        <p id="members" className='text-4xl font-bold mr-0 my-2'>{<CountUp start={0} end={members} duration={2.5} />}+</p>
+                        <MdVolunteerActivism className=' text-white w-full text-3xl' />
+                        <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                                {({ isVisible }) => (
+                                <div>
+                                    {isVisible ? <p id="members" className='sm:text-4x1 text-white font-bold mr-0 my-2'>{<CountUp start={0} end={members} duration={2.5} />}+</p> : <p id="partners" className='sm:text-4x1 text-white font-bold mr-0 my-2'>1,000+</p>}
+                                </div>
+                                )}
+                            </VisibilitySensor>
+
                         
-                        <p className='text-sm font-bold mr-0'>Members</p>
+                        
+                        <p className='text-sm text-white font-bold mr-0'>Members</p>
                     </div>
                 </div>
-                <div className="sm:bg-[#cccccc] bg-white sm:p-20 p-12 flex justify-center items-center">
+                <div className="bg-[#34699d] sm:w-[150px] w-[100px] xl:w-[15vw] sm:p-auto p-5 sm:py-20 py-7 flex justify-center rounded-md items-center">
                     <div className='flex flex-col justify-center items-center'>
-                        <FcConferenceCall className=' text-red-400 w-full text-3xl' />
-                        <p id="countries" className='text-4xl font-bold mr-0 my-2'>{<CountUp start={0} end={countries} duration={3} />}+</p>
-                        <p className='text-sm font-bold mr-0'>Countries</p>
+                        <FcConferenceCall className=' text-white w-full text-3xl' />
+                        <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                                {({ isVisible }) => (
+                                <div>
+                                    {isVisible ? <p id="countries" className='sm:text-4x1 text-white font-bold mr-0 my-2'>{<CountUp start={0} end={countries} duration={3} />}+</p> : <p id="partners" className='sm:text-4x1 text-white font-bold mr-0 my-2'>50+</p>}
+                                </div>
+                                )}
+                            </VisibilitySensor>
+                        <p className='text-sm text-white font-bold mr-0'>Countries</p>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,9 @@
 .section3{
-    background-image: linear-gradient(180deg,white 50%,#F7F2F7 0)
+    background-image: linear-gradient(#F7F2F7,#c8e5e6 )
 }
+
+/* @media (max-width: 400px) {
+    .col {
+        font-size:small;
+    }
+} */

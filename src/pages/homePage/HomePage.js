@@ -22,8 +22,10 @@ function HomePage() {
 
         {/* About Learn It, certifications, Mission */}
         <Section2 />
+
         {/*  Section with 23 partners, volunteer count, webinar count */}
         <Section3 />
+        
         {/* Join Us and Contact Us Page Redirects  */}
         {/* Upcoming Events Section (Preview)  */}
         {/* Partners Section  */}
