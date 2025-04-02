@@ -23,8 +23,8 @@ function JoinUs() {
                 </div>
             </div>
             
-            <div className="flex items-center justify-normal md:w-[100%] w-[90%] lg:flex-nowrap my-4 mx-0 flex-wrap gap-x-4 md:gap-x-2 gap-y-4 pb-10 h-3/6">
-                <div className="bucket1 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%]">
+            <div className="flex items-center justify-normal w-[70vw] sm:w-[50vw] lg:w-[90%] lg:flex-nowrap my-4 mx-0 flex-wrap gap-x-4 md:gap-x-2 gap-y-4 pb-10 h-3/6">
+                <div className="bucket1 flex justify-center items-center flex-col bg-white px-6 py-10 sm:py-3 sm:h-full lg:w-[30vw]">
                     <FaPeopleGroup />
                     <h5 className="my-2 text-center">General member application</h5>
                     <h5 className="font-light my-2 text-center">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</h5>
@@ -34,28 +34,22 @@ function JoinUs() {
                         Apply
                     </button>
                 </div>
-                <div className="bucket2 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%]">
+                <div className="bucket2 flex justify-center items-center flex-col bg-white px-6 py-10 sm:py-3 sm:h-full lg:w-[30vw]">
                     <MdVolunteerActivism />
                     <h5 className="my-2">Volunteer Sign up</h5>
                     <h5 className="font-light my-2 text-center">
                         Consider joining our incredible team of volunteers (and get certified volunteer hours!) or apply for any executive board position openings! 
                     </h5>
                     <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
-                        onClick={()=>setVolunteer(true)}
-                    >
+                        onClick={()=>setVolunteer(true)}>
                         More
                     </button>
                 </div>
-                <div className="bucket3 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%] ">
+                <div className="bucket3 flex justify-center items-center flex-col bg-white px-6 py-10 sm:py-3 sm:h-full lg:w-[30vw] ">
                     <FaSuitcase />
                     <h5 className="my-2 text-center">New position openings</h5>
                     <h5 className="font-light my-2 mt-0 text-center">
-                        <ul>
-                            <li className="text-start my-1">International Relations Manager
-                                ...</li>
-                            <li className="text-start my-1">Social media co-manager...
-                            </li>
-                        </ul>
+                        Learn It is hiring an International Relations Manager and Social Media Co-Manager to expand global reach and manage content for volunteer hours!
                     </h5>
                     <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
                         onClick={()=>setPositions(true)}
@@ -63,7 +57,7 @@ function JoinUs() {
                         More
                     </button>
                 </div>
-                <div className="bucket4 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%] ">
+                {/* <div className="bucket4 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%] ">
                     <BsExclamationCircle />
                     <h5 className="my-2 text-center"><span>NEW Opportunity!</span> Join our website rebranding team</h5>
                     <h5 className="font-light my-2 text-center">
@@ -74,7 +68,7 @@ function JoinUs() {
                     >
                         More
                     </button>
-                </div>
+                </div> */}
             </div>
             {/* Modal for general membership */}
             <Modal open={general} change={setGeneral}>

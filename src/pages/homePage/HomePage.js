@@ -1,7 +1,8 @@
 import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
 import Section2 from "./section2/section2";
-import Section3 from "./section3/Section3";
+import Section3 from "./section3/section3";
+import Section4 from "./section4/section4";
 import homeImage from "./learn-it-final-product.gif";
 
 function HomePage() {
@@ -27,6 +28,7 @@ function HomePage() {
         <Section3 />
         
         {/* Join Us and Contact Us Page Redirects  */}
+
         {/* Upcoming Events Section (Preview)  */}
         {/* Partners Section  */}
         <section id="partners" className="my-7 pt-10" >

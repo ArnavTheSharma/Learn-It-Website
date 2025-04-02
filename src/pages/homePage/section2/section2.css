@@ -7,20 +7,20 @@
     grid-template-areas:
         'title middle right'
         'text middle right'
-        '. middle right';
 }
 
 .title {
     color: #DD6C73;
     font-weight:bolder;
     font-size:2vw;
+    text-align: center;
 }
 
 .text { 
     grid-area: text;
     text-wrap: balance;
-    font-size:1.5vw;
-    color: #5654A3;
+    font-size:1.7vw;
+    color: #5a5b5c;
     font-weight: bold;
     text-align: center;
 }
@@ -40,7 +40,7 @@
 
 .certificateText {
     font-weight:bold;
-    color: #5654A3;
+    color: #474F54;
     text-wrap:balance;
     text-align: center;
     font-size:1.5vw;
