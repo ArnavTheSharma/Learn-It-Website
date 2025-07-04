@@ -37,7 +37,7 @@ function EventsPage() {
     }
 
     return(
-        <div className="eventContainer">
+        <div className="eventContainer p-200">
             <h2>{event.title}</h2>
             <p className="desc">{event.content}</p>
             <p className="desc">{event.content2}</p>

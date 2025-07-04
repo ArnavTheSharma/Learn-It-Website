@@ -1,17 +1,9 @@
 .EventsListPageContainer {
-    background-image: linear-gradient(#8ad8db, #ffffff);
-    padding-top: 10px;
-    padding-bottom: 100px;
     text-align: center;
-    margin-top: -7%;
-    padding-top: 7%;
 }
 
-
 .eventContainer {
-    padding-top: -9%;
-    margin-top: 9%;
-    height: 100%;
+    /* margin-top: 150px; */
 }
 
 .desc {
