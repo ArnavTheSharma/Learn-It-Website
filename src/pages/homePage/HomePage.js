@@ -1,7 +1,7 @@
 import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
 import Section2 from "./section2/section2";
-import Section3 from "./section3/section3";
+import Section3 from "./section3/Section3";
 import homeImage from "./learn-it-final-product.gif";
 
 function HomePage() {
